@@ -16,6 +16,7 @@
       | valid_api_key   | invalid_request_body |  GET          | /transcripts/valid_id   | 400           | invalid_response_json   |
 
 ##Notes
+In this case im using API GET /transcripts/:id to be automated
 1. Using scenario outline on BDD Gherking scenario to make the code clean, we can just seperate each case into each scenario but its not efficient and will make the automation test time increased
 2. The examples is to test different value that we want to test, e.g : transcripts_id_endpoint has valid_id and invalid_id it means we test the API using the id that can be proceed and id that cannot be proceed, is the same as the api key and schema
 3. Actually we can just skip the schema checking when automate API but its not a best practice, we need to make sure when the response data is correct we need to check the schema as well to avoid invalid structure of the API
